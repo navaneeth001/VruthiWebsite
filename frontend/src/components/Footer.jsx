@@ -3,10 +3,12 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
 import { Leaf, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 
 export const Footer = () => {
   const [email, setEmail] = React.useState('');
+  const navigate = useNavigate();
 
   const handleSubscribe = (e) => {
     e.preventDefault();
@@ -14,6 +16,11 @@ export const Footer = () => {
       toast.success('Thank you for subscribing!');
       setEmail('');
     }
+  };
+
+  const handleNavigate = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -54,10 +61,19 @@ export const Footer = () => {
           <div>
             <h3 className="text-base font-semibold text-foreground mb-4">Quick Links</h3>
             <ul className="space-y-3">
-              {['About Us', 'Our Solution', 'Technology', 'Market Opportunity', 'Social Impact', 'Team'].map((link) => (
-                <li key={link}>
-                  <button className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    {link}
+              {[
+                { name: 'Home', path: '/' },
+                { name: 'About Us', path: '/about' },
+                { name: 'Services', path: '/services' },
+                { name: 'Technology', path: '/technology' },
+                { name: 'Contact', path: '/contact' },
+              ].map((link) => (
+                <li key={link.name}>
+                  <button
+                    onClick={() => handleNavigate(link.path)}
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {link.name}
                   </button>
                 </li>
               ))}

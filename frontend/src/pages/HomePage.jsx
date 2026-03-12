@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
-import { ArrowRight, Sparkles, TrendingUp, Users, Leaf, Recycle } from 'lucide-react';
+import { ArrowRight, Sparkles, TrendingUp, Users, Leaf, Recycle, Smartphone } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export const HomePage = () => {
@@ -77,8 +77,17 @@ export const HomePage = () => {
                 <Button
                   size="lg"
                   variant="outline"
+                  onClick={() => window.open('https://play.google.com/store/search?q=vruthi&c=apps&hl=en', '_blank')}
+                  className="border-secondary/30 hover:bg-secondary/5 text-base"
+                >
+                  <Smartphone className="mr-2 h-5 w-5" />
+                  Find our app here
+                </Button>
+                <Button
+                  size="lg"
+                  variant="ghost"
                   onClick={() => { navigate('/contact'); window.scrollTo(0, 0); }}
-                  className="border-primary/30 hover:bg-primary/5 text-base"
+                  className="hover:bg-primary/5 text-base"
                 >
                   Contact Us
                 </Button>

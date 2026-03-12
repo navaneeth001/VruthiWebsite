@@ -7,11 +7,12 @@ export const AboutPage = () => {
   const team = [
     {
       name: 'Ajith Edathodi',
-      role: 'CEO & Founder',
+      role: 'CEO & Co-Founder',
       education: 'BBM',
       experience: '13 years in telesales industry',
       description: 'Visionary leader with extensive experience in business development and strategic partnerships.',
-      initials: 'AE'
+      initials: 'AE',
+      image: 'assets/team/ajith.jpg'
     },
     {
       name: 'Chittur Srilalan Rajashree',
@@ -19,15 +20,27 @@ export const AboutPage = () => {
       education: 'B.Sc., MA, B.Ed., MBA',
       experience: 'Software Engineer (Singapore), VP-Placements',
       description: 'Operations expert with diverse background in technology and management.',
-      initials: 'CR'
+      initials: 'CR',
+      image: 'assets/team/rajasree.jpg'
     },
     {
       name: 'Navaneeth',
-      role: 'CTO',
-      education: 'B.Tech (Applied Electronics)',
-      experience: 'Bosch India, Elda Health, Honeywell',
+      role: 'CTO & Co-Founder',
+      education: 'B.Tech (Applied Electronics), MBA',
+      experience: 'Bosch India, Honeywell',
       description: 'Technology leader with experience at leading tech companies building scalable systems.',
-      initials: 'NV'
+      initials: 'NV',
+      image: 'assets/team/navaneeth.jpg'
+    },
+    {
+      name: 'Parthiv Kanhan',
+      role: 'CMO & Co-Founder',
+      education: 'Creative Arts & Digital Marketing',
+      experience: 'Award-winning Digital Marketing Head & Creative Director',
+      description: 'Specialist in visual storytelling, ad film conceptualization, and end-to-end digital strategies for global brands.',
+      initials: 'PK',
+      image: 'assets/team/parthiv.jpg',
+      linkedin: 'https://www.linkedin.com/in/parthiv-kanhan-754895260/'
     }
   ];
 
@@ -181,8 +194,18 @@ export const AboutPage = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex flex-col items-center text-center mb-6">
-                  <div className="w-24 h-24 rounded-full bg-gradient-primary flex items-center justify-center mb-4">
-                    <span className="text-3xl font-bold text-primary-foreground">{member.initials}</span>
+                  <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-primary/20 bg-muted">
+                    {member.image ? (
+                      <img 
+                        src={member.image} 
+                        alt={member.name} 
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-primary flex items-center justify-center">
+                        <span className="text-3xl font-bold text-primary-foreground">{member.initials}</span>
+                      </div>
+                    )}
                   </div>
                   <h3 className="text-xl font-bold text-foreground">{member.name}</h3>
                   <p className="text-sm text-primary font-medium mt-1">{member.role}</p>
@@ -211,7 +234,7 @@ export const AboutPage = () => {
                   "Technology has the power to change how we treat our planet. With Vruthi, we are empowering individuals and businesses to manage waste smarter, reduce their footprint, and take part in building a greener tomorrow—right from their fingertips."
                 </p>
                 <footer className="text-sm text-muted-foreground">
-                  <span className="font-semibold text-foreground">Ajith Edathodi</span>, CEO & Founder
+                  <span className="font-semibold text-foreground">Ajith Edathodi</span>, CEO & Co-Founder
                 </footer>
               </blockquote>
             </Card>

@@ -75,7 +75,7 @@ export const ContactPage = () => {
     },
     {
       question: 'How does the pricing work?',
-      answer: 'We offer flexible subscription plans starting from ₹200/month for individuals, with custom pricing for apartments and commercial establishments.'
+      answer: 'We offer flexible subscription plans starting from ₹300/month for individuals, with custom pricing for apartments and commercial establishments.'
     }
   ];
 

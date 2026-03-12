@@ -43,7 +43,7 @@ export const ServicesPage = () => {
     {
       name: 'Individual',
       description: 'Perfect for single households',
-      price: '₹200',
+      price: '₹300',
       period: '/month',
       features: [
         'Daily doorstep pickup',

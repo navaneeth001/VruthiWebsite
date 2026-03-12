@@ -7,7 +7,7 @@ export const TeamSection = () => {
   const team = [
     {
       name: 'Ajith Edathodi',
-      role: 'CEO & Co-Founder',
+      role: 'Founder & CEO',
       education: 'BBM',
       experience: '13 years in telesales industry',
       description: 'Visionary leader with extensive experience in business development and strategic partnerships.',
@@ -131,7 +131,7 @@ export const TeamSection = () => {
                 "Technology has the power to change how we treat our planet. With Vruthi, we are empowering individuals and businesses to manage waste smarter, reduce their footprint, and take part in building a greener tomorrow—right from their fingertips."
               </p>
               <footer className="text-sm text-muted-foreground">
-                <span className="font-semibold text-foreground">Ajith Edathodi</span>, CEO & Co-Founder
+                <span className="font-semibold text-foreground">Ajith Edathodi</span>, Founder & CEO
               </footer>
             </blockquote>
           </Card>

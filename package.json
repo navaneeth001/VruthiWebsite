@@ -2,6 +2,6 @@
   "name": "vruthi-website-root",
   "version": "1.0.0",
   "scripts": {
-    "deploy": "cd frontend && npm install && npm run deploy"
+    "deploy": "cd frontend && yarn deploy"
   }
 }

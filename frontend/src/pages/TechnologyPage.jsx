@@ -150,6 +150,9 @@ export const TechnologyPage = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Advanced features powering India's most comprehensive waste management platform
             </p>
+            <p className="text-sm text-gray-600 italic mt-4">
+              *These represent our desired technological outcomes and capabilities we aim to achieve within the next year
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">

@@ -1,0 +1,7 @@
+{
+  "name": "vruthi-website-root",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "cd frontend && yarn deploy"
+  }
+}

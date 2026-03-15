@@ -18,7 +18,7 @@ export const MarketOpportunity = () => {
       title: 'TAM (Total Addressable Market)',
       value: '₹8-9B',
       subtitle: 'Urban solid waste',
-      description: 'Organized, tech-enabled waste management opportunity in urban India.',
+      description: 'Organized, innovative waste management opportunity in urban India.',
       color: 'text-secondary'
     },
     {

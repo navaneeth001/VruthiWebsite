@@ -61,7 +61,7 @@ export const HomePage = () => {
                   <span className="text-gradient-primary">Worthy Future</span>
                 </h1>
                 <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                  Tech-enabled green platform disrupting waste management, sanitation, and disposal for Indian households. Zero waste to landfill, maximum social impact.
+                  An intelligent platform reimagining waste management, sanitation, and disposal for Indian households. Blending smart technology with meaningful social impact to shape a cleaner, zero-landfill future.
                 </p>
               </div>
 
@@ -163,7 +163,7 @@ export const HomePage = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: 'Tech-Enabled Platform',
+                title: 'Smart Digital Platform',
                 description: 'IoT smart bins, mobile app, and real-time tracking for complete transparency.',
                 icon: '📱'
               },

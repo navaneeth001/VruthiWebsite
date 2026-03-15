@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
-import { Leaf, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 
@@ -29,17 +29,17 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-primary-foreground" />
+            <div className="flex items-center space-x-3">
+              <div className="w-24 h-24 flex items-center justify-center overflow-hidden rounded-md">
+                <img src="/logo.png" alt="Vruthi Logo" className="w-full h-full object-contain" />
               </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-foreground">Vruthi</span>
-                <span className="text-xs text-muted-foreground -mt-1">by Neowaste Innovation</span>
+              <div className="flex flex-col items-start">
+                <span className="text-3xl font-bold text-foreground leading-none">Vruthi</span>
+                <span className="text-sm font-medium text-muted-foreground">by Neowaste Innovation</span>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Tech-enabled green platform disrupting waste management in India. Zero waste to landfill, maximum impact.
+            <p className="text-sm text-muted-foreground leading-relaxed mt-4">
+              An intelligent platform reimagining waste management in India. Blending smart technology with meaningful social impact to shape a cleaner, zero-landfill future.
             </p>
             <div className="flex space-x-2">
               <Button variant="ghost" size="icon" className="hover:text-primary">

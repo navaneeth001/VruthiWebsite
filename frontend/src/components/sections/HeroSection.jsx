@@ -34,9 +34,9 @@ export const HeroSection = () => {
                 Turning Every Bit of Waste into a{' '}
                 <span className="text-gradient-primary">Worthy Future</span>
               </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                Tech-enabled green platform disrupting waste management, sanitation, and disposal for Indian households. Zero waste to landfill, maximum social impact.
-              </p>
+                <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+                  An intelligent platform reimagining waste management, sanitation, and disposal for Indian households. Blending smart technology with meaningful social impact to shape a cleaner, zero-landfill future.
+                </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">

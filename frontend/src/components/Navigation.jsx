@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -39,18 +39,18 @@ export const Navigation = () => {
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <button
             onClick={() => handleNavigate('/')}
-            className="flex items-center space-x-2 group"
+            className="flex items-center space-x-3 group outline-none"
           >
-            <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center transform group-hover:scale-110 transition-transform">
-              <Leaf className="w-6 h-6 text-primary-foreground" />
+            <div className="w-20 h-20 flex items-center justify-center transform group-hover:scale-105 transition-transform overflow-hidden rounded-md">
+              <img src="/logo.png" alt="Vruthi Logo" className="w-full h-full object-contain" />
             </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-foreground">Vruthi</span>
-              <span className="text-xs text-muted-foreground -mt-1">by Neowaste Innovation</span>
+            <div className="flex flex-col items-start">
+              <span className="text-2xl font-bold text-foreground leading-none">Vruthi</span>
+              <span className="text-xs font-medium text-muted-foreground">by Neowaste Innovation</span>
             </div>
           </button>
 

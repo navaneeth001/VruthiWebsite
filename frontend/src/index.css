@@ -21,11 +21,11 @@ code {
         --background: 42 35% 97%; /* Warm off-white */
         --foreground: 180 8% 15%; /* Deep charcoal */
         
-        /* Primary - Emerald/Teal (Growth, Sustainability) */
-        --primary: 164 68% 38%; /* Rich emerald green */
+        /* Primary - Green (Vruthi Brand Color) */
+        --primary: 122 39% 49%; /* #4CAF50 - Main brand color */
         --primary-foreground: 0 0% 100%;
-        --primary-light: 164 55% 55%; /* Lighter emerald */
-        --primary-dark: 164 75% 28%; /* Deeper emerald */
+        --primary-light: 123 39% 57%; /* #66BB6A - Lighter green */
+        --primary-dark: 123 43% 39%; /* #388E3C - Deeper green */
         
         /* Secondary - Ocean Blue (Trust, Technology) */
         --secondary: 200 75% 48%; /* Ocean blue */
@@ -46,27 +46,27 @@ code {
         --muted-foreground: 180 5% 45%;
         --border: 42 20% 88%;
         --input: 42 20% 88%;
-        --ring: 164 68% 38%;
+        --ring: 122 39% 49%;
         
         /* State Colors */
         --destructive: 0 84% 60%;
         --destructive-foreground: 0 0% 98%;
-        --success: 142 76% 36%;
+        --success: 122 39% 49%;
         --success-foreground: 0 0% 100%;
         --warning: 38 92% 50%;
         --warning-foreground: 0 0% 100%;
         
         /* Gradients - Light, Professional */
-        --gradient-primary: linear-gradient(135deg, hsl(164 68% 38%) 0%, hsl(164 55% 55%) 100%);
+        --gradient-primary: linear-gradient(135deg, hsl(122 39% 49%) 0%, hsl(123 39% 57%) 100%);
         --gradient-secondary: linear-gradient(135deg, hsl(200 75% 48%) 0%, hsl(200 65% 65%) 100%);
-        --gradient-hero: linear-gradient(135deg, hsl(164 68% 38% / 0.05) 0%, hsl(200 75% 48% / 0.05) 100%);
-        --gradient-accent: linear-gradient(135deg, hsl(164 55% 55% / 0.1) 0%, hsl(200 65% 65% / 0.1) 100%);
-        
+        --gradient-hero: linear-gradient(135deg, hsl(122 39% 49% / 0.05) 0%, hsl(200 75% 48% / 0.05) 100%);
+        --gradient-accent: linear-gradient(135deg, hsl(123 39% 57% / 0.1) 0%, hsl(200 65% 65% / 0.1) 100%);
+
         /* Shadows - Elegant */
-        --shadow-sm: 0 1px 3px hsl(164 68% 38% / 0.08);
-        --shadow-md: 0 4px 12px hsl(164 68% 38% / 0.12);
-        --shadow-lg: 0 12px 32px hsl(164 68% 38% / 0.16);
-        --shadow-glow: 0 0 40px hsl(164 55% 55% / 0.3);
+        --shadow-sm: 0 1px 3px hsl(122 39% 49% / 0.08);
+        --shadow-md: 0 4px 12px hsl(122 39% 49% / 0.12);
+        --shadow-lg: 0 12px 32px hsl(122 39% 49% / 0.16);
+        --shadow-glow: 0 0 40px hsl(123 39% 57% / 0.3);
         
         /* Animations */
         --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -78,10 +78,10 @@ code {
     .dark {
         --background: 180 8% 8%;
         --foreground: 0 0% 98%;
-        --primary: 164 60% 48%;
+        --primary: 122 39% 49%;
         --primary-foreground: 0 0% 100%;
-        --primary-light: 164 55% 60%;
-        --primary-dark: 164 75% 35%;
+        --primary-light: 123 39% 57%;
+        --primary-dark: 123 43% 39%;
         --secondary: 200 70% 55%;
         --secondary-foreground: 0 0% 100%;
         --secondary-light: 200 60% 70%;
@@ -96,10 +96,10 @@ code {
         --muted-foreground: 0 0% 63%;
         --border: 180 8% 20%;
         --input: 180 8% 20%;
-        --ring: 164 60% 48%;
+        --ring: 122 39% 49%;
         --destructive: 0 70% 50%;
         --destructive-foreground: 0 0% 98%;
-        --success: 142 70% 45%;
+        --success: 122 39% 49%;
         --success-foreground: 0 0% 100%;
         --warning: 38 90% 60%;
         --warning-foreground: 0 0% 100%;

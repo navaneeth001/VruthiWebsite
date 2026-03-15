@@ -55,7 +55,7 @@ export const SolutionSection = () => {
             Meet <span className="text-gradient-primary">Vruthi</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            A comprehensive, tech-enabled platform that makes waste management smart, transparent, and rewarding. From doorstep pickup to zero-landfill processing.
+            A comprehensive, smart platform that makes waste management transparent and rewarding. From doorstep pickup to zero-landfill processing.
           </p>
         </div>
 

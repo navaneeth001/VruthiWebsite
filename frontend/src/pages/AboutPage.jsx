@@ -7,12 +7,12 @@ export const AboutPage = () => {
   const team = [
     {
       name: 'Ajith Edathodi',
-      role: 'CEO & Co-Founder',
+      role: 'Founder & CEO',
       education: 'BBM',
       experience: '13 years in telesales industry',
       description: 'Visionary leader with extensive experience in business development and strategic partnerships.',
       initials: 'AE',
-      image: 'assets/team/ajith.jpg'
+      image: '/assets/team/ajith.jpg'
     },
     {
       name: 'Chittur Srilalan Rajashree',
@@ -21,7 +21,7 @@ export const AboutPage = () => {
       experience: 'Software Engineer (Singapore), VP-Placements',
       description: 'Operations expert with diverse background in technology and management.',
       initials: 'CR',
-      image: 'assets/team/rajasree.jpg'
+      image: '/assets/team/rajasree.jpg'
     },
     {
       name: 'Navaneeth',
@@ -30,7 +30,7 @@ export const AboutPage = () => {
       experience: 'Bosch India, Honeywell',
       description: 'Technology leader with experience at leading tech companies building scalable systems.',
       initials: 'NV',
-      image: 'assets/team/navaneeth.jpg'
+      image: '/assets/team/navaneeth.jpg'
     },
     {
       name: 'Parthiv Kanhan',
@@ -39,7 +39,7 @@ export const AboutPage = () => {
       experience: 'Award-winning Digital Marketing Head & Creative Director',
       description: 'Specialist in visual storytelling, ad film conceptualization, and end-to-end digital strategies for global brands.',
       initials: 'PK',
-      image: 'assets/team/parthiv.jpg',
+      image: '/assets/team/parthiv.jpg',
       linkedin: 'https://www.linkedin.com/in/parthiv-kanhan-754895260/'
     }
   ];
@@ -78,7 +78,7 @@ export const AboutPage = () => {
               Transforming Waste Management in <span className="text-gradient-primary">India</span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              Neowaste Innovation Pvt Ltd is a tech-enabled green platform aiming to disrupt waste management, sanitation, and disposal for Indian households, one step at a time.
+              Neowaste Innovation Pvt Ltd is a tech-forward platform dedicated to revolutionizing waste management, sanitation, and disposal for Indian households through smart technology and scalable impact.
             </p>
           </div>
         </div>
@@ -234,7 +234,7 @@ export const AboutPage = () => {
                   "Technology has the power to change how we treat our planet. With Vruthi, we are empowering individuals and businesses to manage waste smarter, reduce their footprint, and take part in building a greener tomorrow—right from their fingertips."
                 </p>
                 <footer className="text-sm text-muted-foreground">
-                  <span className="font-semibold text-foreground">Ajith Edathodi</span>, CEO & Co-Founder
+                  <span className="font-semibold text-foreground">Ajith Edathodi</span>, Founder & CEO
                 </footer>
               </blockquote>
             </Card>

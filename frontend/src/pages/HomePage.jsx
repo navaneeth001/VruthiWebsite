@@ -95,25 +95,27 @@ export const HomePage = () => {
             </div>
 
             {/* Right content - Hero image */}
-            <div className="relative animate-fadeIn delay-200">
-              <div className="relative rounded-2xl overflow-hidden shadow-elegant hover-lift">
+            <div className="relative animate-fadeIn delay-200 flex flex-col items-center justify-center">
+              <div className="relative w-full flex items-center justify-center mb-8">
                 <img
-                  src="https://images.unsplash.com/photo-1762805544550-f12a8ebceb2e"
-                  alt="Sustainable waste management in India"
-                  className="w-full h-[500px] object-cover"
+                  src={require('@/assets/VRUTHI.svg').default || require('@/assets/VRUTHI.svg')}
+                  alt="Vruthi Sustainable waste management"
+                  className="w-full h-auto max-h-[700px] object-contain scale-125"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-                
-                {/* Floating card */}
-                <div className="absolute bottom-6 left-6 right-6 bg-card/90 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-2xl">♻️</span>
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-foreground">Smart Waste Collection</div>
-                      <div className="text-xs text-muted-foreground">IoT-enabled tracking & zero landfill approach</div>
-                    </div>
+              </div>
+              
+              {/* Clickable card below SVG */}
+              <div 
+                onClick={() => window.open('https://vruthiapp.web.app', '_blank')}
+                className="w-full max-w-md bg-background/90 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-border/50 cursor-pointer hover:bg-accent/10 transition-colors z-10"
+              >
+                <div className="flex items-center space-x-3">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <ArrowRight className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold text-foreground">Explore our services</div>
+                    <div className="text-xs text-muted-foreground">Click here to visit Vruthi App</div>
                   </div>
                 </div>
               </div>

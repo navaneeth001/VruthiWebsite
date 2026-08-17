@@ -241,6 +241,17 @@ export const AboutPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Vruthi Overview Summary */}
+      <section className="py-16 bg-muted/20 border-t border-border/30">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed font-normal">
+              Vruthi is the flagship waste management service of Neowaste Innovation Pvt Ltd, providing reliable doorstep food waste collection, household waste collection, plastic waste collection, dry waste pickup, wet waste management, apartment waste management, villa waste collection, commercial waste collection, and garbage pickup across Kochi and Ernakulam. We serve homes, apartments, restaurants, offices, and businesses through scheduled waste pickup, recycling, waste segregation, and eco-friendly disposal solutions. Our mission is to protect land, water, culture, and future communities by building a cleaner, greener Kochi through responsible waste management.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

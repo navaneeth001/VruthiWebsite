@@ -52,7 +52,7 @@ export const HomePage = () => {
             <div className="space-y-8 animate-fadeInUp">
               <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 inline-flex items-center space-x-2">
                 <Sparkles className="w-4 h-4" />
-                <span>Revolutionizing Waste Management in India</span>
+                <span>Premier Waste Management Company Kochi</span>
               </Badge>
               
               <div className="space-y-4">
@@ -61,7 +61,7 @@ export const HomePage = () => {
                   <span className="text-gradient-primary">Worthy Future</span>
                 </h1>
                 <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                  An intelligent platform reimagining waste management, sanitation, and disposal for Indian households. Blending smart technology with meaningful social impact to shape a cleaner, zero-landfill future.
+                  Vruthi is a smart, tech-driven <strong>waste management company Kochi</strong>. We offer hassle-free <strong>doorstep waste collection Kochi</strong>, safe <strong>waste disposal service Kochi</strong>, and eco-friendly household waste management services across Kochi and Ernakulam to shape a cleaner, zero-landfill future.
                 </p>
               </div>
 
@@ -186,6 +186,73 @@ export const HomePage = () => {
                 <p className="text-muted-foreground leading-relaxed">{item.description}</p>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Core Local SEO Offerings Section */}
+      <section className="py-20 bg-muted/20 border-t border-border/40">
+        <div className="container-custom">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <Badge className="bg-primary/10 text-primary border-primary/20 mb-4">
+              Local Service Focus
+            </Badge>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              Reliable <span className="text-gradient-primary">Waste Management & Collection</span> in Kochi
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              We provide professional doorstep waste collection, residential garbage pickup, and waste disposal services across Kochi and Ernakulam.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: 'Household Waste Collection',
+                description: 'Scheduled daily home waste collection Kochi and reliable household waste pickup Kochi services designed specifically for residential neighborhoods.',
+                icon: '🏠'
+              },
+              {
+                title: 'Dry & Recyclable Waste',
+                description: 'Specialized dry waste collection Kochi and recyclable waste collection Kochi focusing on sorting and circular economy recovery.',
+                icon: '♻️'
+              },
+              {
+                title: 'Doorstep Waste Collection',
+                description: 'Punctual, friendly, and complete doorstep waste collection service Kochi to keep our neighborhoods clean and hygienic.',
+                icon: '🚛'
+              },
+              {
+                title: 'Professional Disposal',
+                description: 'Environment-first waste disposal service Kochi and residential waste management Kochi compliant with solid waste rules.',
+                icon: '🌱'
+              }
+            ].map((service, index) => (
+              <Card key={index} className="p-6 border-border/50 bg-card hover:shadow-md transition-shadow">
+                <div className="text-4xl mb-4">{service.icon}</div>
+                <h3 className="text-lg font-bold text-foreground mb-2">{service.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+              </Card>
+            ))}
+          </div>
+
+          {/* Near Me Search Engine Helpers */}
+          <div className="mt-12 p-8 bg-card border border-border/50 rounded-2xl">
+            <h3 className="text-xl font-bold text-foreground mb-6 text-center">Looking for premium waste services near you?</h3>
+            <div className="grid md:grid-cols-3 gap-6 text-center">
+              <div>
+                <h4 className="font-semibold text-foreground mb-1 text-base">Waste Management Near Me</h4>
+                <p className="text-sm text-muted-foreground">Vruthi delivers rapid, compliant local waste management services for households and enterprises in Kochi.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1 text-base">Waste Collection Near Me</h4>
+                <p className="text-sm text-muted-foreground">Get reliable home doorstep waste pickup service Kochi at your convenience via our simple Android/iOS application.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1 text-base">Waste Pickup Near Me</h4>
+                <p className="text-sm text-muted-foreground">Your nearest eco-partner for residential garbage collection Kochi, organic composting, and recyclables recovery.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

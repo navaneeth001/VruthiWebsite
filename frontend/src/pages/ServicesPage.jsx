@@ -12,29 +12,29 @@ export const ServicesPage = () => {
     {
       icon: Smartphone,
       title: 'Doorstep Waste Collection',
-      description: 'Scheduled pickup for households and businesses through the Vruthi mobile app, ensuring timely and convenient removal of waste from the source.',
-      features: ['Easy scheduling', 'Real-time tracking', 'Digital payments', 'Flexible plans'],
+      description: 'Vruthi offers the most reliable doorstep waste collection Kochi and Ernakulam has to offer. Scheduled household waste pickup Kochi, home waste collection Kochi, and waste pickup service Kochi are all fully integrated into our smart mobile app.',
+      features: ['Easy mobile app scheduling', 'Real-time driver tracking', 'Transparent digital receipts', 'Flexible household plans'],
       image: 'https://images.unsplash.com/photo-1471897488648-5eae4ac6686b'
     },
     {
       icon: Recycle,
       title: 'Waste Processing & Recycling',
-      description: 'Advanced processing and recycling of collected waste to convert reusable materials into new products, reducing landfill use and promoting sustainability.',
-      features: ['Segregation at source', 'Material recovery', 'Quality recycling', 'Certified disposal'],
+      description: 'Advanced processing and recyclable waste collection Kochi solutions convert paper, plastics, and metals into valuable new raw materials, ensuring that dry waste collection Kochi is highly optimized for maximum diversion from landfills.',
+      features: ['Segregation at source', 'High-quality sorting', 'Certified recycling partners', 'Verified eco-tracking'],
       image: 'https://images.unsplash.com/photo-1487875961445-47a00398c267'
     },
     {
       icon: Trash2,
       title: 'Safe Waste Disposal',
-      description: 'Environmentally responsible disposal of non-recyclable materials using structured systems to minimize environmental impact and comply with regulations.',
-      features: ['Compliant disposal', 'Zero to landfill', 'Environmental safety', 'Documentation'],
+      description: 'Hygienic and strictly compliant waste disposal service Kochi. We utilize eco-friendly protocols for residual materials, making residential waste management Kochi clean, secure, and entirely compliant with municipal regulations.',
+      features: ['Compliant solid waste protocols', 'Zero-landfill organic models', 'Hygienic community bin tracking', 'Professional environmental audits'],
       image: 'https://images.unsplash.com/photo-1528122819723-9dca3a31295d'
     },
     {
       icon: Package,
       title: 'Composting Services',
-      description: 'Convert organic waste into nutrient-rich compost through our advanced composting facility, supporting sustainable agriculture and gardening.',
-      features: ['Organic waste processing', 'Quality compost', 'Bulk availability', 'Eco-friendly'],
+      description: 'Transform organic food waste into rich soil compost at our advanced municipal composting units, providing decentralized residential waste management Kochi and supporting local agricultural communities.',
+      features: ['Wet and organic waste handling', 'Nutrient-rich micro-compost', 'Bulk society options available', '100% natural, chemical-free'],
       image: 'https://images.unsplash.com/photo-1641941672934-9e33a79ec482'
     }
   ];
@@ -99,10 +99,10 @@ export const ServicesPage = () => {
               Our Services
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              Comprehensive Waste Management <span className="text-gradient-primary">Solutions</span>
+              Waste Management & <span className="text-gradient-primary">Waste Collection Service</span> Ernakulam & Kochi
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              From doorstep collection to zero-landfill processing, we handle your waste responsibly with complete transparency.
+              Vruthi is your premier partner for <strong>waste management services Ernakulam</strong> and <strong>waste collection service Ernakulam</strong>. From professional <strong>doorstep waste collection Kochi</strong> to zero-landfill processing, we handle your residential and commercial garbage pickup Kochi responsibly.
             </p>
           </div>
         </div>

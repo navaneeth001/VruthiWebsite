@@ -158,32 +158,57 @@ export const HomePage = () => {
               Why Choose <span className="text-gradient-primary">Vruthi?</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We combine technology, sustainability, and social impact to deliver India's most comprehensive waste management solution.
+              We combine technology, sustainability, and responsible waste management to make waste collection simpler, more transparent, and accessible for households, businesses, apartments, and communities across Kochi and Ernakulam.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: 'Smart Digital Platform',
-                description: 'IoT smart bins, mobile app, and real-time tracking for complete transparency.',
+                title: 'Smart & Technology-Enabled Waste Management',
+                description: [
+                  'Vruthi uses a technology-enabled waste management platform to make everyday waste collection more convenient. Customers can schedule doorstep waste collection, manage their pickup services, and stay informed about their waste collection through the Vruthi platform. Our approach connects households and businesses with a more organized and reliable waste collection service in Kochi.'
+                ],
                 icon: '📱'
               },
               {
-                title: 'Zero Waste Model',
-                description: 'Complete circular economy - recycle, compost, and upcycle everything.',
+                title: 'Collection, Recovery & Recycling',
+                description: [
+                  'Effective waste management starts with proper collection, segregation, recovery, and recycling. Vruthi helps manage different waste streams, including household waste, dry waste, plastic waste, recyclable waste, and other eligible materials, directing recoverable materials towards appropriate recycling and recovery channels.',
+                  'Our plastic waste collection and recyclable waste management approach helps reduce improper dumping and supports a more circular approach to resource recovery. Wherever applicable, waste is handled through appropriate recovery, recycling, reuse, composting, or responsible disposal processes.'
+                ],
                 icon: '♻️'
               },
               {
-                title: 'Social Impact',
-                description: '40% of our workforce comprises physically challenged individuals.',
+                title: 'Community & Social Impact',
+                description: [
+                  'Better waste management begins at the community level. Vruthi works with households, apartments, schools, businesses, shops, and local communities in Kochi and Ernakulam to encourage responsible waste segregation and disposal.',
+                  'Through environmental awareness programs, community initiatives, and local campaigns, we promote better waste management practices in Kochi while encouraging people to take greater responsibility for the waste they generate.'
+                ],
                 icon: '🤝'
+              },
+              {
+                title: 'Responsible Waste Management',
+                description: [
+                  'From doorstep waste collection and household waste management to segregation, material recovery, recycling, and responsible disposal, Vruthi works to create a more organized and environmentally responsible waste management system in Kochi.',
+                  'We believe waste is not simply something to be thrown away. When managed responsibly, waste can become a valuable resource — recovered, recycled, reused, and given a new purpose.'
+                ],
+                icon: '🌱'
+              },
+              {
+                title: 'Building a Cleaner, Circular Future',
+                description: [
+                  'Our goal is to make waste collection and waste management services simple, reliable, technology-enabled, and accessible while helping communities reduce unnecessary dumping, recover valuable materials, and move towards a more sustainable and circular future.'
+                ],
+                icon: '🌍'
               }
             ].map((item, index) => (
               <Card key={index} className="p-8 hover-lift border-border/50 bg-card animate-fadeInUp" style={{ animationDelay: `${index * 100}ms` }}>
                 <div className="text-5xl mb-4">{item.icon}</div>
                 <h3 className="text-xl font-semibold text-foreground mb-3">{item.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                {item.description.map((paragraph, i) => (
+                  <p key={i} className={`text-muted-foreground leading-relaxed ${i > 0 ? 'mt-3' : ''}`}>{paragraph}</p>
+                ))}
               </Card>
             ))}
           </div>
@@ -200,32 +225,42 @@ export const HomePage = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
               Reliable <span className="text-gradient-primary">Waste Management & Collection</span> in Kochi
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              We provide professional doorstep waste collection, residential garbage pickup, and waste disposal services across Kochi and Ernakulam.
-            </p>
+            <div className="space-y-4">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Vruthi provides professional waste management services, waste collection services, doorstep waste collection, waste pickup, and responsible waste disposal services in Kochi and Ernakulam. We help households, apartments, residential communities, businesses, shops, offices, institutions, and other organizations manage their waste through convenient collection, proper segregation, material recovery, recycling, and responsible disposal.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Whether you need household waste collection, residential waste management, dry waste collection, recyclable waste collection, plastic waste collection, food waste management, commercial waste collection, or regular doorstep waste pickup, Vruthi provides an organized approach to managing waste while supporting a cleaner and more sustainable community.
+              </p>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: 'Household Waste Collection',
-                description: 'Scheduled daily home waste collection Kochi and reliable household waste pickup Kochi services designed specifically for residential neighborhoods.',
+                title: 'Household & Residential Waste Collection',
+                description: 'Vruthi provides household waste collection and residential waste management services in Kochi and Ernakulam, helping families manage their everyday waste through convenient and scheduled collection. Our home waste collection and residential waste pickup services are designed to make responsible waste disposal easier for households and residential communities. We support responsible management of eligible household waste, dry waste, recyclable waste, plastic waste, and other collected materials, helping reduce improper dumping and encouraging better waste segregation at source.',
                 icon: '🏠'
               },
               {
-                title: 'Dry & Recyclable Waste',
-                description: 'Specialized dry waste collection Kochi and recyclable waste collection Kochi focusing on sorting and circular economy recovery.',
+                title: 'Dry, Plastic & Recyclable Waste Collection',
+                description: 'Our dry waste collection and recyclable waste collection services in Kochi help recover valuable materials from the waste stream. Depending on the collection category, materials may include plastic, paper, cardboard, metal, PET bottles, packaging materials, and other recyclable materials. Vruthi supports plastic waste management, recyclable waste recovery, dry waste management, waste segregation, material recovery, and recycling, helping divert recoverable materials from unnecessary disposal and supporting a more circular waste management system.',
                 icon: '♻️'
               },
               {
-                title: 'Doorstep Waste Collection',
-                description: 'Punctual, friendly, and complete doorstep waste collection service Kochi to keep our neighborhoods clean and hygienic.',
+                title: 'Doorstep Waste Collection & Waste Pickup',
+                description: 'Our doorstep waste collection service in Kochi and Ernakulam provides a convenient way for households and businesses to arrange their waste pickup. Customers can schedule their collection through the Vruthi waste management platform, making it easier to manage regular waste collection and responsible disposal. If you are looking for waste collection near me, waste pickup near me, household waste pickup, residential waste collection, doorstep waste pickup, or a waste collection service in Kochi, Vruthi provides a technology-enabled solution for convenient and organized waste management.',
                 icon: '🚛'
               },
               {
-                title: 'Professional Disposal',
-                description: 'Environment-first waste disposal service Kochi and residential waste management Kochi compliant with solid waste rules.',
+                title: 'Responsible Waste Disposal & Resource Recovery',
+                description: 'Vruthi focuses on responsible waste disposal, waste recovery, recycling, and sustainable waste management rather than simply moving waste from one location to another. Our approach follows a structured process of collection, segregation, recovery, recycling, reuse, and appropriate disposal, wherever applicable. By supporting better waste management practices in Kochi and Ernakulam, Vruthi aims to reduce improper waste dumping, improve resource recovery, encourage recycling, and reduce unnecessary dependence on landfills.',
                 icon: '🌱'
+              },
+              {
+                title: 'Waste Management for Businesses & Communities',
+                description: 'Vruthi also supports commercial waste management and waste collection for businesses, shops, offices, apartments, institutions, and communities. Organized waste collection can help commercial and residential communities maintain cleaner premises while ensuring collected materials are directed towards appropriate recovery, recycling, or disposal channels. From household waste collection and plastic waste management to commercial waste collection, dry waste recycling, recyclable waste recovery, and doorstep waste pickup, Vruthi is building a more convenient and responsible waste management ecosystem across Kochi and Ernakulam.',
+                icon: '🏢'
               }
             ].map((service, index) => (
               <Card key={index} className="p-6 border-border/50 bg-card hover:shadow-md transition-shadow">

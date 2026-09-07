@@ -198,10 +198,10 @@ export const InvestmentCTA = () => {
                   <div>
                     <div className="font-semibold text-foreground mb-1">Phone</div>
                     <a
-                      href="tel:+918139933683"
+                      href="tel:+919633383462"
                       className="text-sm text-primary hover:text-primary-dark transition-colors"
                     >
-                      +91 8139933683
+                      +91 96333 83462
                     </a>
                   </div>
                 </div>

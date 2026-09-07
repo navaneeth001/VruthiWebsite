@@ -43,8 +43,8 @@ export const ContactPage = () => {
     {
       icon: Phone,
       title: 'Phone',
-      content: '+91 8139933683',
-      link: 'tel:+918139933683'
+      content: '+91 96333 83462',
+      link: 'tel:+919633383462'
     },
     {
       icon: Mail,

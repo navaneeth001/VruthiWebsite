@@ -94,21 +94,22 @@ export const AboutPage = () => {
                 <Target className="w-8 h-8 text-primary" />
               </div>
               <h2 className="text-3xl font-bold text-foreground mb-4">Our Mission</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                To provide structured, efficient waste management in Cochin and beyond, empowering communities through the Vruthi app while balancing profit with social and environmental impact.
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                To deliver structured, tech-enabled doorstep waste collection across Cochin and South India via the Vruthi app. Through IoT tracking, transparent recycling, and organic composting, we turn waste into value while scaling through a community-driven franchise model.
               </p>
+              <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">Key Pillars</h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-2">
                   <span className="text-primary font-bold">•</span>
-                  <span className="text-muted-foreground">Doorstep waste collection with IoT tracking</span>
+                  <span className="text-muted-foreground"><span className="font-semibold text-foreground">IoT Doorstep Pickup:</span> Daily tracked collection for food waste &amp; recyclables.</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-primary font-bold">•</span>
-                  <span className="text-muted-foreground">Transparent recycling and composting</span>
+                  <span className="text-muted-foreground"><span className="font-semibold text-foreground">Certified Recycling:</span> Zero-leakage biomethanation and material recovery.</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-primary font-bold">•</span>
-                  <span className="text-muted-foreground">Scale through franchising model</span>
+                  <span className="text-muted-foreground"><span className="font-semibold text-foreground">Franchise Scale:</span> Rapid, profitable expansion across Kerala &amp; South India.</span>
                 </li>
               </ul>
             </Card>
@@ -119,21 +120,22 @@ export const AboutPage = () => {
                 <Eye className="w-8 h-8 text-secondary" />
               </div>
               <h2 className="text-3xl font-bold text-foreground mb-4">Our Vision</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                A clean, sustainable, waste-free South India where every household contributes to a circular economy and environmental preservation.
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                A zero-landfill South India powered by a circular economy, dignified green jobs, and technology-driven sustainability.
               </p>
+              <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">Key Goals</h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-2">
                   <span className="text-secondary font-bold">•</span>
-                  <span className="text-muted-foreground">Zero waste to landfill across India</span>
+                  <span className="text-muted-foreground"><span className="font-semibold text-foreground">Zero Landfill:</span> 100% circular diversion from soil and backwaters.</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-secondary font-bold">•</span>
-                  <span className="text-muted-foreground">Empowered, inclusive workforce</span>
+                  <span className="text-muted-foreground"><span className="font-semibold text-foreground">Dignified Workforce:</span> Fair living wages, safety gear, and healthcare.</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-secondary font-bold">•</span>
-                  <span className="text-muted-foreground">Technology-driven sustainability</span>
+                  <span className="text-muted-foreground"><span className="font-semibold text-foreground">Smart Impact:</span> App-based tracking with verified ESG compliance.</span>
                 </li>
               </ul>
             </Card>
@@ -245,9 +247,15 @@ export const AboutPage = () => {
       {/* Vruthi Overview Summary */}
       <section className="py-16 bg-muted/20 border-t border-border/30">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed font-normal">
-              Vruthi is the flagship waste management service of Neowaste Innovation Pvt Ltd, providing reliable doorstep food waste collection, household waste collection, plastic waste collection, dry waste pickup, wet waste management, apartment waste management, villa waste collection, commercial waste collection, and garbage pickup across Kochi and Ernakulam. We serve homes, apartments, restaurants, offices, and businesses through scheduled waste pickup, recycling, waste segregation, and eco-friendly disposal solutions. Our mission is to protect land, water, culture, and future communities by building a cleaner, greener Kochi through responsible waste management.
+              Vruthi, the flagship environmental service of Neowaste Innovation Pvt Ltd, delivers reliable, scientific doorstep waste collection and sustainable resource recovery across Kochi and Ernakulam.
+            </p>
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed font-normal">
+              We provide comprehensive waste management solutions for residential homes, villas, housing societies (RWAs), restaurants, and commercial enterprises. Our scheduled services cover daily organic food and wet waste management, recyclable plastic pickup, dry waste sorting, electronic waste (e-waste) disposal, and bulk debris removal.
+            </p>
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed font-normal">
+              Built on a strict protocol of source segregation and zero-leakage processing, Vruthi diverts waste from landfills and local backwaters through authorized composting and circular recycling hubs. Guided by our core mission—&#8220;Protecting Land, Water, Culture &amp; Future&#8221;—we combine smart digital scheduling with dignified, professional service to build a cleaner, greener Kerala.
             </p>
           </div>
         </div>

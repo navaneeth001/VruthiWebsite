@@ -12,8 +12,8 @@ export const ServicesPage = () => {
     {
       icon: Smartphone,
       title: 'Doorstep Waste Collection',
-      description: 'Vruthi offers the most reliable doorstep waste collection Kochi and Ernakulam has to offer. Scheduled household waste pickup Kochi, home waste collection Kochi, and waste pickup service Kochi are all fully integrated into our smart mobile app.',
-      features: ['Easy mobile app scheduling', 'Real-time driver tracking', 'Transparent digital receipts', 'Flexible household plans'],
+      description: `Vruthi delivers punctual, technology-enabled doorstep waste collection for modern homes, apartments, and gated societies. Say goodbye to missed collections and overflowing bins—schedule your daily wet food waste and recyclable dry waste pickup effortlessly with the tap of a button.`,
+      features: ['📲 App-Based On-Demand Booking', '📍 Live Route & Driver Tracking', '🧾 Digital Receipts & Impact Metrics', '🗓️ Flexible Household Plans'],
       image: 'https://images.unsplash.com/photo-1471897488648-5eae4ac6686b'
     },
     {
@@ -99,10 +99,14 @@ export const ServicesPage = () => {
               Our Services
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              Waste Management & <span className="text-gradient-primary">Waste Collection Service</span> Ernakulam & Kochi
+              Vruthi <span className="text-muted-foreground">|</span>{' '}
+              <span className="text-gradient-primary">Waste Management &amp; Doorstep Waste Collection</span> in Kochi
             </h1>
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              Vruthi is your premier partner for <strong>waste management services Ernakulam</strong> and <strong>waste collection service Ernakulam</strong>. From professional <strong>doorstep waste collection Kochi</strong> to zero-landfill processing, we handle your residential and commercial garbage pickup Kochi responsibly.
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-6">
+              From daily residential food waste pickup and housing society (RWA) management to commercial kitchen waste disposal, we ensure zero-leakage, transparent collection. Every kilogram of collected organic wet waste and segregated dry recyclables is routed through certified biomethanation, composting, and authorized material recovery facilities (MRFs)—guaranteeing zero waste to landfills and zero dumping into Kerala's backwaters.
+            </p>
+            <p className="text-lg sm:text-xl font-semibold text-gradient-primary">
+              Protecting Land, Water, Culture &amp; Future.
             </p>
           </div>
         </div>
@@ -137,7 +141,9 @@ export const ServicesPage = () => {
                     <div className="grid grid-cols-2 gap-3">
                       {service.features.map((feature, i) => (
                         <div key={i} className="flex items-center space-x-2">
-                          <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
+                          {/^[a-zA-Z]/.test(feature) && (
+                            <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
+                          )}
                           <span className="text-sm text-foreground">{feature}</span>
                         </div>
                       ))}
